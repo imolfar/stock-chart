@@ -36,6 +36,7 @@ angular.module('StockChart', ['chart.js'])
         prevMonth = false
         res.result.forEach (dayPrice) ->
           date = dayPrice.date.split("-")
+          # Show the first day of the month with the month itself
           if prevMonth == date[1]
             day = date[2]
           else
