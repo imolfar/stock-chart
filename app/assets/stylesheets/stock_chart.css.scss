@@ -1,0 +1,29 @@
+// Place all the styles related to the StockChart controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+*= require angular-chart.js/dist/angular-chart.css
+*/
+
+
+
+.stock-chart {
+
+  font-family: Sans-Serif;
+  color: #333;
+  padding: 2em;
+
+  h1 {
+    color: #555;
+  }
+
+  .no-ticker {
+    color: #777;
+    font: 0.9em Sans-serif;
+    text-align: center;
+  }
+
+  canvas {
+    margin-top: 2em;
+  }
+}

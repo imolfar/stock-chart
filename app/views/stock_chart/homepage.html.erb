@@ -1,0 +1,21 @@
+<div ng-controller="StockChartController" class="stock-chart">
+    <h1>Stock Chart</h1>
+
+
+    <% if @tickersList != nil && @tickersList.length > 0 %>
+
+        <p>Ticker:</p>
+        <%= select("ticker", "code", @tickersList, {include_blank: '— Choose desired ticker —'}, {'ng-model' => 'code', 'ng-change' => 'loadChart()'}) %>
+
+        <p ng-if="message">{{message}}</p>
+
+        <canvas ng-if="code" id="line" height="100%" class="chart chart-line" chart-data="chartData" chart-labels="chartLabels">
+        </canvas>
+
+        <p class="no-ticker" ng-if="!code">No ticker selected</p>
+
+
+<% else %>
+        <p>Something's wrong, no Stock Tickers found.</p>
+    <% end %>
+</div>

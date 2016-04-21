@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: ec2-54-235-94-236.compute-1.amazonaws.com
+  username: ruvmzhorjygdek
+  password: DwiUoukc50I_Ry4XDV_jkST7r3
+
+development:
+  <<: *default
+  database: dbik2pi5m92ckd
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: stock_chart_test
+
+production:
+  <<: *default
+  database: stock_chart_production

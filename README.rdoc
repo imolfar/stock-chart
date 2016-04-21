@@ -1,0 +1,37 @@
+== README
+
+This app could be strictly separated into front-end (AngularJS app) and back-end API (rails), but I intentionally made
+home page generation on server-side so you can see that I know how to do it : )
+Also I've included bower_components folder into git, so no need to install, though in real-world application it would
+have only package.json file from which one have to run bower install.
+
+
+- rake db:migrate
+- To populate the database with bootstrap data run: rake db:seed
+
+
+
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
